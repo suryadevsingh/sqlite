@@ -20,7 +20,7 @@ class DBHelper {
 
   initDB()async{
     io.Directory documentsDirectory = await getApplicationDocumentsDirectory();
-    String path = join(documentsDirectory.path,"chalejayejo.db");
+    String path = join(documentsDirectory.path,"batabase.db");
     var db = await openDatabase(path,version: 1,onCreate: onCreateFunc);
     return db ;
   }
